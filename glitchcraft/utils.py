@@ -5,8 +5,6 @@
 from math import sqrt
 from typing import Iterable, Tuple
 
-import numpy as np
-from PIL import Image, ImageDraw, ImageFilter, ImageOps
 from tqdm import tqdm, trange
 
 # type definition for an RGB pixel
