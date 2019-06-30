@@ -1,4 +1,4 @@
-![logo](/logo/logo.png)
+![logo](/logo/logo.png =100x100)
 
 # glitchcraft
 python tools to make glitch art
