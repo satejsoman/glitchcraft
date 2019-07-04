@@ -1,0 +1,11 @@
+README.md
+setup.py
+glitchcraft/__init__.py
+glitchcraft/colorspace.py
+glitchcraft/core.py
+glitchcraft/mask.py
+glitchcraft/utils.py
+glitchcraft.egg-info/PKG-INFO
+glitchcraft.egg-info/SOURCES.txt
+glitchcraft.egg-info/dependency_links.txt
+glitchcraft.egg-info/top_level.txt
