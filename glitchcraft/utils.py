@@ -40,3 +40,8 @@ def mean_pixel(pixels: Sequence[Pixel]) -> Pixel:
     """ quadratic luminance averaging for RGB pixels """
     n = float(len(pixels))
     return tuple(int(sqrt(sum(pixel[channel]**2 for pixel in pixels)/n)) for channel in (0, 1, 2))
+
+# misc 
+
+def const(value):
+    return lambda *args: value 
