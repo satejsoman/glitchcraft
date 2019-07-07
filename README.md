@@ -2,3 +2,10 @@
 <div align="center"><img src="./logo/logo.png" width="100"></div>
 
 python tools to make glitch art
+
+techniques:
+- pixelsorting
+- channelswapping (WIP)
+- fractal color shifting (WIP)
+- style transfer (WIP)
+- deepdreaming (WIP)
