@@ -7,6 +7,7 @@ techniques:
 - pixelsorting
 - channelswapping (WIP)
 - fractal color shifting (WIP)
+- cahn-hillard evolution (WIP)
 - notepad trick (WIP)
 - audio effects (WIP)
 - style transfer (WIP)
