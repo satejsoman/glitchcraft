@@ -25,6 +25,8 @@ in the image above, the number of iterations before convergence is mapped to a c
 
 ## examples
 ```python
+src = Image.open("../artifacts/input/stream_square.png")
+
 for (cx, cy) in [
     (-1, 1),         # default
     (-0.7, 0.27015), # julia  
@@ -37,7 +39,7 @@ for (cx, cy) in [
 starting with this initial image, we can vary the fractal colorshift parameters:
 <div align="center"><img src="../artifacts/input/stream_square.png" width="256"></div>
 
-varying the starting point of the convergence search (`(cx, cy)`) and the initial intensity mapping (`normalization`) produces these results:
+changing the starting point of the convergence search (`(cx, cy)`) and the initial intensity mapping (`normalization`) produces these results:
 
 | `(cx, cy)`          | `(-1, 1)`     | `(-0.7, 0.27015)` | `(-0.5, 0.5)` |
 | ------------------- |:-------------:|:-----------------:|:------------:|
