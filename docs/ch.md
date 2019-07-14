@@ -12,7 +12,7 @@ generally, given an initial concentration field, it describes how particles will
 
 ## take this initial sample image:
 <div align="center">
-<img src=../../artifacts/input/stream_square_greyscale.png width="256">
+<img src=../artifacts/input/stream_square_greyscale.png width="256">
 </div>
 
 ## run the [solver](examples/ch_evolution.py): 
@@ -41,5 +41,5 @@ ffmpeg -t 5 -pattern_type glob -i "*.png" -vf "scale=512:512:flags=lanczos" ch_e
 
 ## _voilà_
 <div align="center">
-<img src=../../artifacts/output/ch_evolution/ch_evolution.gif width="256">
+<img src=../artifacts/output/ch_evolution/ch_evolution.gif width="256">
 </div>
