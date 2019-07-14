@@ -25,11 +25,8 @@ hue = PixelProperty(cspace.hue)
 median = SummaryStat(np.median)
 mean   = SummaryStat(np.average)
 
-def from_transparent(img):
-    pass 
+def from_image(img, determinant = lambda px: px == (255, 255, 255)):
+    pass
     
-def from_grayscale(img, keep):
-    pass 
-
 brightness > 1.2 * median(brightness)
 hue < 0.9 * mean(hue)

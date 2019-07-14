@@ -3,7 +3,7 @@
 # common utilities for image manipulation
 
 from math import sqrt
-from typing import Iterable, Tuple
+from typing import Iterable, Sequence, Tuple, Union
 
 from tqdm import tqdm, trange
 
