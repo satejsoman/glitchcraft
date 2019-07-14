@@ -42,12 +42,10 @@ def update(U, U_hat, a, S_eig, CH_eig):
     # invert the cosine transform
     return idct2(U_hat), U_hat
 
-def integrate(src, num_iterations = 250, dt = 0.00005, epsilon = 0.01, a =2):
+def integrate(src, dt = 0.00005, epsilon = 0.01, a =2):
     """ runs cahn-hillard simulation 
     
     src: should be a square, black and white or single channel image
-
-    num_iterations: how many iterations the simulation is run
 
     dt: time step between states, (should really be exponentially growing)
 
@@ -87,6 +85,6 @@ def integrate(src, num_iterations = 250, dt = 0.00005, epsilon = 0.01, a =2):
     yield (256 * U).astype(int)
 
     # main loop
-    for i in progress(range(1, num_iterations)):
+    while True:
         U, U_hat  = update(U, U_hat, a, S_eig, CH_eig)
         yield (256 * U).astype(int)
