@@ -1,17 +1,21 @@
 from pathlib import Path
 
-from PIL import Image
 import matplotlib.pyplot as plt
+from PIL import Image
 
 from glitchcraft.cahn_hillard import integrate
+from glitchcraft.utils import progress
 
 
 def main(input_path, output_dir):
     src = Image.open(input_path).convert('L')
     output_dir.mkdir(exist_ok=True)
+    
     filename_pattern = str(output_dir/"frame_{0:03d}.png")
-    for (i, image) in enumerate(integrate(src)):
-        plt.imsave(filename_pattern.format(i), image, cmap="Greys")
+    state = integrate(src)
+    
+    for i in progress(250):
+        plt.imsave(filename_pattern.format(i), next(state), cmap="Greys")
 
 
 if __name__ == "__main__":
