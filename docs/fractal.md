@@ -34,12 +34,15 @@ for (cx, cy) in [
         print(normalization, cx, cy)
         colorshift(src, normalization=normalization, cx=cx, cy=cy).save(output_dir/("stream_shifted_{}_{}_{}.png".format(normalization, cx, cy)))
 ```
+starting with this initial image, we can vary the fractal colorshift parameters:
+<div align="center"><img src="../artifacts/input/stream_square.png" width="256"></div>
+
 varying the starting point of the convergence search (`(cx, cy)`) and the initial intensity mapping (`normalization`) produces these results:
 
 | `(cx, cy)`          | `(-1, 1)`     | `(-0.7, 0.27015)` | `(2.2, 1.5)` |
-| ------------------- | ------------- | ----------------- | ------------ |
-| `normalization = 3` | <img src="../artifacts/output/fractals/stream_shifted_3_-1_1.png" width="100"> | <img src="../artifacts/output/fractals/stream_shifted_3_-0.7_0.27015.png" width="100"> | <img src="../artifacts/output/fractals/stream_shifted_3_2.2_1.5.png" width="100"> | 
-| `normalization = 6` | <img src="../artifacts/output/fractals/stream_shifted_6_-1_1.png" width="100"> | <img src="../artifacts/output/fractals/stream_shifted_6_-0.7_0.27015.png" width="100"> | <img src="../artifacts/output/fractals/stream_shifted_6_2.2_1.5.png" width="100"> | 
-| `normalization = 9` | <img src="../artifacts/output/fractals/stream_shifted_9_-1_1.png" width="100"> | <img src="../artifacts/output/fractals/stream_shifted_9_-0.7_0.27015.png" width="100"> | <img src="../artifacts/output/fractals/stream_shifted_9_2.2_1.5.png" width="100"> | 
+|:-------------------:|:-------------:|:-----------------:|:------------:|
+| `normalization = 3` | <img src="../artifacts/output/fractals/stream_shifted_3_-1_1.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_3_-0.7_0.27015.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_3_2.2_1.5.png" width="200"> | 
+| `normalization = 6` | <img src="../artifacts/output/fractals/stream_shifted_6_-1_1.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_6_-0.7_0.27015.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_6_2.2_1.5.png" width="200"> | 
+| `normalization = 9` | <img src="../artifacts/output/fractals/stream_shifted_9_-1_1.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_9_-0.7_0.27015.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_9_2.2_1.5.png" width="200"> | 
 
 
