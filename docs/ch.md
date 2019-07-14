@@ -4,9 +4,7 @@ the [cahn-hillard equation](https://en.wikipedia.org/wiki/Cahn%E2%80%93Hilliard_
 
 <div align="center"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b7a860f6b6857c5eefafb72a81c8fc1d25964edc"></div>
 
-generally, given an initial concentration field, it describes how particles will diffuse along a free energy gradient. this library implements a solver that takes a single-channel or grayscale image as an initial concentration gradient and simulates the system evolution.
-
-[david eyre](http://www.math.utah.edu/~eyre/research/methods/papers.html) developed a stable numerical integration scheme to solve the cahn-hillard partial differential equation.
+generally, given an initial concentration field, it describes how particles will diffuse along a free energy gradient. [david eyre](http://www.math.utah.edu/~eyre/research/methods/papers.html) developed a stable numerical integration scheme to solve the cahn-hillard partial differential equation. glitchcraft ports over eyre's solver from matlab. the implementation takes a single-channel or grayscale image as an initial concentration gradient and sets up a generator that yields the successive system state when called. 
 
 # example: 
 
@@ -21,10 +19,16 @@ from glitchcraft.cahn_hillard import integrate
 from pathlib import Path
 from PIL import Image
 
+
 def main(input_path, output_dir):
     src = Image.open(input_path).convert('L')
     output_dir.mkdir(exist_ok=True)
-    integrate(src, str(output_dir/"frame_{0:03d}.png"))
+    
+    filename_pattern = str(output_dir/"frame_{0:03d}.png")
+    state = integrate(src)
+    
+    for i in progress(250):
+        plt.imsave(filename_pattern.format(i), next(state), cmap="Greys")
 
 
 if __name__ == "__main__":
