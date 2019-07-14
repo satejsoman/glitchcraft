@@ -1,6 +1,9 @@
-from glitchcraft.cahn_hillard import integrate
 from pathlib import Path
+
 from PIL import Image
+
+from glitchcraft.cahn_hillard import integrate
+
 
 def main(input_path, output_dir):
     src = Image.open(input_path).convert('L')
