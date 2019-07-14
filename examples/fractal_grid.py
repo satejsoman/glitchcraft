@@ -15,8 +15,8 @@ src = Image.open("../artifacts/input/stream_square.png")
 # parameter grid 
 for (cx, cy) in [
     # (-1, 1),         # default
-    (-0.7, 0.27015), # julia  
-    (2.2, 1.5)       # mandelbrot
+    # (-0.7, 0.27015), # julia  
+    (-0.5, 0.5)       
 ]: 
     for normalization in [3, 6, 9]:
         print(normalization, cx, cy)
