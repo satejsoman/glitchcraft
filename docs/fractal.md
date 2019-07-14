@@ -45,4 +45,11 @@ varying the starting point of the convergence search (`(cx, cy)`) and the initia
 | `normalization = 6` | <img src="../artifacts/output/fractals/stream_shifted_6_-1_1.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_6_-0.7_0.27015.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_6_-0.5_0.5.png" width="200"> | 
 | `normalization = 9` | <img src="../artifacts/output/fractals/stream_shifted_9_-1_1.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_9_-0.7_0.27015.png" width="200"> | <img src="../artifacts/output/fractals/stream_shifted_9_-0.5_0.5.png" width="200"> | 
 
+## in the wild
+[here's](https://www.instagram.com/p/By-rbSXHQeK/) an example of fractal colorshifting combined with other techniques
 
+## see also
+- https://mathcs.clarku.edu/~djoyce/julia/julia.html
+- http://www.relativitybook.com/CoolStuff/julia_set.html
+- http://staff.www.ltu.se/~larserik/applmath/chap9en/part4.html
+- http://0pointer.de/blog/projects/mandelbrot.html
