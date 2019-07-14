@@ -3,8 +3,7 @@
 
 <h6 align="center"> python tools to make glitch art </h6>
 
-
-techniques:
+# techniques:
 - pixelsorting
 - [cahn-hillard phase separation](docs/ch.md)
 - channelswapping (WIP)
@@ -13,3 +12,7 @@ techniques:
 - audio effects (WIP)
 - style transfer (WIP)
 - deepdreaming (WIP)
+
+# see also
+- https://github.com/ml4a/ml4a-guides
+- https://github.com/Hvass-Labs/TensorFlow-Tutorials
