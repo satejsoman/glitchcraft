@@ -21,7 +21,7 @@ colorshift(blank, normalization=3).save(output_dir/"julia.png")
 <img src=../artifacts/output/fractals/julia.png width="256">
 </div>
 
-in the image above, the number of iterations before convergence is mapped to a color. instead of starting with a blank value of `(255, 255, 255)`, we can use a pixel's intensity as a starting value, which is what the `colorshift` function, when applied to an image, will do
+in the image above, the number of iterations before convergence is mapped to a color. instead of starting with a blank value of `(255, 255, 255)`, we can use a pixel's intensity as a starting value, which is what the `colorshift` function does, when applied to an image.
 
 ## examples
 ```python
