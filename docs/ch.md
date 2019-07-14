@@ -15,7 +15,7 @@ generally, given an initial concentration field, it describes how particles will
 <img src=../artifacts/input/stream_square_greyscale.png width="256">
 </div>
 
-## run the [solver](examples/ch_evolution.py): 
+## run the [solver](../examples/ch_evolution.py): 
 ```python
 from glitchcraft.cahn_hillard import integrate
 from pathlib import Path
