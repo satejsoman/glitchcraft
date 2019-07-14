@@ -5,9 +5,9 @@ python tools to make glitch art
 
 techniques:
 - pixelsorting
+- [cahn-hillard phase separation](docs/cahn_hillard/ch.md)
 - channelswapping (WIP)
 - fractal color shifting (WIP)
-- cahn-hillard evolution (WIP)
 - notepad trick (WIP)
 - audio effects (WIP)
 - style transfer (WIP)
