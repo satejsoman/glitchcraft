@@ -10,12 +10,12 @@ output_dir.mkdir(exist_ok=True)
 src = Image.open("../artifacts/input/stream_square.png")
 
 # draw basic fractal
-# colorshift(Image.new("RGB", src.size, color="white"), normalization=3).save(output_dir/"julia.png")
+colorshift(Image.new("RGB", src.size, color="white"), normalization=3).save(output_dir/"julia.png")
 
 # parameter grid 
 for (cx, cy) in [
-    # (-1, 1),         # default
-    # (-0.7, 0.27015), # julia  
+    (-1, 1),         # default
+    (-0.7, 0.27015), # julia  
     (-0.5, 0.5)       
 ]: 
     for normalization in [3, 6, 9]:
