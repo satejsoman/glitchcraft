@@ -42,12 +42,10 @@ def update(U, U_hat, a, S_eig, CH_eig):
     # invert the cosine transform
     return idct2(U_hat), U_hat
 
-def integrate(src, filename_pattern, num_iterations = 250, dt = 0.00005, epsilon = 0.01, a =2):
+def integrate(src, num_iterations = 250, dt = 0.00005, epsilon = 0.01, a =2):
     """ runs cahn-hillard simulation 
     
     src: should be a square, black and white or single channel image
-
-    filename_pattern = what to call each frame 
 
     num_iterations: how many iterations the simulation is run
 
@@ -85,9 +83,10 @@ def integrate(src, filename_pattern, num_iterations = 250, dt = 0.00005, epsilon
 
     U = np.asarray(src)/256
     U_hat = dct2(U)
-    plt.imsave(filename_pattern.format(0), (256 * U).astype(int), cmap="Greys")
+
+    yield (256 * U).astype(int)
 
     # main loop
     for i in progress(range(1, num_iterations)):
         U, U_hat  = update(U, U_hat, a, S_eig, CH_eig)
-        plt.imsave(filename_pattern.format(i), (256 * U).astype(int), cmap="Greys")
+        yield (256 * U).astype(int)
