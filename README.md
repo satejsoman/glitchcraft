@@ -6,7 +6,7 @@
 
 techniques:
 - pixelsorting
-- [cahn-hillard phase separation](docs/cahn_hillard/ch.md)
+- [cahn-hillard phase separation](docs/ch.md)
 - channelswapping (WIP)
 - fractal color shifting (WIP)
 - notepad trick (WIP)
