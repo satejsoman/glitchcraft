@@ -1,5 +1,5 @@
 <h1 align="center"> g l i t c h c r a f t </h1>
-<div align="center"><img src="./logo/logo.png" width="100"></div>
+<div align="center"><img src="./logo/logo.png" width="192"></div>
 
 <h6 align="center"> python tools to make glitch art </h6>
 
