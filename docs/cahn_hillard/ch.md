@@ -4,7 +4,7 @@ the [cahn-hillard equation](https://en.wikipedia.org/wiki/Cahn%E2%80%93Hilliard_
 
 <div align="center"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b7a860f6b6857c5eefafb72a81c8fc1d25964edc"></div>
 
-generally, given an initial concentration field, it describes how particles will diffuse along a free energy gradient. this library implements a solver that takes a single-channel or grayscale image as an initial concentration gradient and simulates the system evolution
+generally, given an initial concentration field, it describes how particles will diffuse along a free energy gradient. this library implements a solver that takes a single-channel or grayscale image as an initial concentration gradient and simulates the system evolution.
 
 [david eyre](http://www.math.utah.edu/~eyre/research/methods/papers.html) developed a stable numerical integration scheme to solve the cahn-hillard partial differential equation.
 
