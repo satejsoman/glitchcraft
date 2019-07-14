@@ -28,7 +28,7 @@ in the image above, the number of iterations before convergence is mapped to a c
 for (cx, cy) in [
     (-1, 1),         # default
     (-0.7, 0.27015), # julia  
-    (2.2, 1.5)       # mandelbrot
+    (-0.5, 0.5)       # another point
 ]: 
     for normalization in [3, 6, 9]:
         print(normalization, cx, cy)
