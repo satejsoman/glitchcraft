@@ -4,6 +4,8 @@
 
 from math import sqrt
 from typing import Iterable, Sequence, Tuple, Union
+from xml.dom import minidom
+import numpy as  np
 
 from tqdm import tqdm, trange
 
@@ -45,3 +47,25 @@ def mean_pixel(pixels: Sequence[Pixel]) -> Pixel:
 
 def const(value):
     return lambda *args: value 
+
+def import_svg_path(filename):
+    doc = minidom.parse(filename)
+    path_strings = [path.getAttribute('d') for path in doc.getElementsByTagName('path')]
+    coords = set(tuple(map(float, coord.split(","))) for coord in path_strings[0].split("C")[1].split())
+    doc.unlink()
+
+    return coords
+
+def fit_x(coords: List[Tuple[float, float]], deg: Optional[int] = None) -> np.polynomial.Polynomial:
+    if not deg: 
+        deg = int(0.75 * len(coords))
+
+    xs, ys = list(zip(*coords))
+    return np.polynomial.Polynomial.fit(xs, ys, deg=deg)
+
+def fit_y(coords: List[Tuple[float, float]], deg: Optional[int] = None) -> np.polynomial.Polynomial:
+    if not deg: 
+        deg = int(0.75 * len(coords))
+
+    xs, ys = list(zip(*coords))
+    return np.polynomial.Polynomial.fit(ys, xs, deg=deg)
