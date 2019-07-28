@@ -9,6 +9,7 @@
 - [fractal color shifting](docs/fractal.md)
 - channelswapping (WIP)
 - cellular automata (WIP)
+- marbling (WIP)
 - notepad trick (WIP)
 - audio effects (WIP)
 - style transfer (WIP)
