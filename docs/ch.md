@@ -1,6 +1,6 @@
-# cahn-hillard phase separation
+# cahn-hilliard phase separation
 
-the [cahn-hillard equation](https://en.wikipedia.org/wiki/Cahn%E2%80%93Hilliard_equation) is a model of phase separation from theoretical materials science. 
+the [cahn-hilliard equation](https://en.wikipedia.org/wiki/Cahn%E2%80%93Hilliard_equation) is a model of phase separation from theoretical materials science. 
 
 <div align="center"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b7a860f6b6857c5eefafb72a81c8fc1d25964edc"></div>
 
