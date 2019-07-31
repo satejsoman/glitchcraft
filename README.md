@@ -5,7 +5,7 @@
 
 ## techniques:
 - pixelsorting
-- [cahn-hillard phase separation](docs/ch.md)
+- [cahn-hilliard phase separation](docs/ch.md)
 - [fractal color shifting](docs/fractal.md)
 - channelswapping (WIP)
 - cellular automata (WIP)
