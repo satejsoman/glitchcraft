@@ -3,7 +3,7 @@
 
 <h6 align="center"> python tools to make glitch art </h6>
 
-## techniques:
+## glitch techniques:
 - pixelsorting
 - [cahn-hilliard phase separation](docs/ch.md)
 - [fractal color shifting](docs/fractal.md)
@@ -14,6 +14,10 @@
 - audio effects (WIP)
 - style transfer (WIP)
 - deepdreaming (WIP)
+
+## generative techniques
+- code skeletons (WIP)
+- bezier glyphs (WIP)
 
 ## see also
 - https://github.com/ml4a/ml4a-guides
