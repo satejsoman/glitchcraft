@@ -3,7 +3,7 @@
 
 <h6 align="center"> python tools to make glitch art </h6>
 
-## glitch techniques:
+## glitch techniques
 - pixelsorting
 - [cahn-hilliard phase separation](docs/ch.md)
 - [fractal color shifting](docs/fractal.md)
