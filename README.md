@@ -16,7 +16,7 @@
 - deepdreaming (WIP)
 
 ## generative techniques
-- code skeletons (WIP)
+- [code skeleton quine](generative/code_skeleton/README.md)
 - bezier glyphs (WIP)
 
 ## see also
