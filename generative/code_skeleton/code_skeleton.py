@@ -7,7 +7,7 @@ from keyword import iskeyword
 #parameters
 w, h = 900, 1500
 code_start = 30
-code_size = 7 #code line thickness
+code_size = 6 #code line thickness
 code_lines = 70
 code_sep = 15
 indent_size = 45
@@ -25,8 +25,7 @@ palette = {
 }
 
 QUOTE, STAR, HASH, BANG, DOT = list(map(chr, [34, 42, 35, 33, 46]))
-
-filename, filetype = "skeleton_quine", "png"
+ADJUST_SPACE = [QUOTE, STAR] + list(map(chr, [40, 91, 92, 63, 46, 47]))
 
 def set_color(rgb):
     stroke(*rgb)
@@ -56,7 +55,7 @@ def setup():
         while code_line[num_spaces] == " " and num_spaces < len(code_line) - 1:
             num_spaces += 1
         line_x = indent_size  + num_spaces * letter_spacing
-        for word in re.findall(r"[\"?\w\"?']+|[\x20-\x7E]", code_line.strip()):
+        for word in re.findall("{}.*?{}|[\w']+|[\x20-\x7E]".format(QUOTE, QUOTE), code_line.strip()):
             keyword_mode = False
             builtin_mode = False
             if iskeyword(word) and not comment_mode:
@@ -91,7 +90,7 @@ def setup():
                         if not any([keyword_mode, comment_mode, builtin_mode, string_mode, c == QUOTE]):
                             set_color(palette["symbols"])
                         text(c, line_x + offset, line_y + 0.3*code_sep)
-                        line_x += letter_spacing + (word_spacing if c == QUOTE or c in "([\\?./" else letter_spacing)
- 
-        line_y += code_sep 
-    save(DOT.join([filename, filetype]))
+                        line_x += letter_spacing + (word_spacing if c in ADJUST_SPACE else letter_spacing)
+        line_y += code_sep
+    
+    save("skeleton_quine.png")
