@@ -8,4 +8,4 @@ _technically_, not a quine, since this reads in itself using python's `__file__`
 
 also, i selected coding practices that would give me a nicer image rather than idiomatic python 🤷
 
-![](code_skeleton/skeleton_quine.png)
+![](skeleton_quine.png)
