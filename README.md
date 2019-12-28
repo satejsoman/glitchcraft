@@ -3,47 +3,25 @@
 
 <h6 align="center"> python tools to make glitch art </h6>
 
-<table align="center">
-  <tr>
-    <th>glitch techniques</th>
-    <th>generative techniques</th>
-  </tr>
-  <tr>
-    <td>pixelsorting</td>
-    <td> [code skeleton quine](generative/code_skeleton)</td>
-  </tr>
-  <tr>
-    <td>[cahn-hilliard phase separation](docs/ch.md)</td>
-    <td>bezier glyphs (WIP)</td>
-  </tr>
-  <tr>
-    <td>[fractal color shifting](docs/fractal.md)</td>
-    <td>marbling (WIP)</td>
-  </tr>
-  <tr>
-    <td>channelswapping (WIP)</td>
-    <td>cellular automata (WIP)</td>
-  </tr>
-  <tr>
-    <td>notepad trick (WIP)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>audio effects (WIP)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>style transfer (WIP)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>deepdreaming (WIP)</td>
-    <td></td>
-  </tr>
-</table>
+## glitch techniques
+- pixelsorting
+- [cahn-hilliard phase separation](docs/ch.md)
+- [fractal color shifting](docs/fractal.md)
+- channelswapping (WIP)
+- cellular automata (WIP)
+- marbling (WIP)
+- notepad trick (WIP)
+- audio effects (WIP)
+- style transfer (WIP)
+- deepdreaming (WIP)
 
+## generative techniques
+- [code skeleton quine](generative/code_skeleton/README.md)
+- bezier glyphs (WIP)
 
-
+## see also
+- https://github.com/ml4a/ml4a-guides
+- https://github.com/Hvass-Labs/TensorFlow-Tutorials
 
 ## see also
 - https://github.com/ml4a/ml4a-guides
