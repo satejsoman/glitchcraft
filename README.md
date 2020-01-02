@@ -22,7 +22,3 @@
 ## see also
 - https://github.com/ml4a/ml4a-guides
 - https://github.com/Hvass-Labs/TensorFlow-Tutorials
-
-## see also
-- https://github.com/ml4a/ml4a-guides
-- https://github.com/Hvass-Labs/TensorFlow-Tutorials
